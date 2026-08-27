@@ -1,0 +1,17 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:"Noto Sans TC","PingFang TC",sans-serif;background:#eef5f7;color:#263238}
+.map-bg{position:fixed;inset:0;opacity:.16;background-image:radial-gradient(circle at 20% 20%,#6aa6b8 1px,transparent 2px),linear-gradient(120deg,transparent 49%,#8ab7c4 50%,transparent 51%);background-size:34px 34px;z-index:-1}
+.app{width:min(92%,780px);margin:28px auto 50px}
+.card{background:rgba(255,255,255,.96);border-radius:24px;padding:30px;box-shadow:0 12px 35px rgba(40,70,80,.14)}
+.cover{text-align:center;padding:48px 28px}
+.emoji{font-size:58px}.title{font-size:clamp(30px,7vw,52px);margin:10px 0;color:#315b68}.subtitle{font-size:18px;line-height:1.9;color:#587078}
+input{width:100%;padding:14px 16px;border:1px solid #ccd9dd;border-radius:12px;font-size:16px;margin:7px 0;background:#fff}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.grid input{min-width:0}
+.btn{width:100%;border:0;border-radius:14px;padding:15px 18px;background:#52796f;color:#fff;font-size:17px;font-weight:700;cursor:pointer;margin-top:12px}.btn:hover{filter:brightness(.95)}
+.progress-wrap{margin-bottom:20px}.progress-top{display:flex;justify-content:space-between;color:#60777e;font-size:14px;margin-bottom:8px}.progress{height:10px;background:#e3ecef;border-radius:99px;overflow:hidden}.bar{height:100%;background:#6f9fa8;transition:width .45s}
+.story{font-size:20px;line-height:1.8;margin:18px 0}
+.options{display:grid;gap:12px}.option{text-align:left;background:#f4f7f7;color:#29454d;border:2px solid transparent;border-radius:16px;padding:18px;cursor:pointer;font-size:17px;line-height:1.55}.option:hover{border-color:#89b0ae;background:#edf5f5}
+.badge{display:inline-block;padding:7px 12px;border-radius:99px;background:#e7f0f2;color:#45636c;font-weight:700}.station{text-align:center;color:#55727a}
+.result{text-align:center}.result h1{font-size:clamp(32px,8vw,55px);color:#315b68}.result-place{font-size:30px;font-weight:800;margin:10px}.result p{font-size:18px;line-height:1.9}.scorebox{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:20px 0}.scorebox span{padding:8px 12px;background:#f0f4f4;border-radius:10px}
+.note{font-size:13px;color:#71858b;margin-top:15px;line-height:1.6}.loading{text-align:center;padding:70px 20px}.spinner{font-size:50px;animation:spin 1.2s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+@media(max-width:600px){.app{margin-top:12px}.card{padding:22px}.cover{padding:35px 18px}.grid{grid-template-columns:1fr 1fr}.story{font-size:18px}.option{font-size:16px}}
